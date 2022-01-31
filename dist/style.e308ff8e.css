@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.chart-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
+
+.stats {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    background-color: #000000;
+}
+
+.stats .menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+.stats .menu ul li {
+    width: 10rem;
+    height: 3rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    display: grid;
+    place-items: center;
+    border: 2px solid #00f;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.stats .menu ul li:hover {
+    background-color: #00f;
+    color: #fff;
+}
+
+.stats .menu ul .active {
+    background-color: #00f;
+    color: #fff;
+}
+
+.one-min, .five-min, .one-month {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: #005C97;  
+    background: -webkit-linear-gradient(to right, #363795, #005C97);
+    background: linear-gradient(to right, #363795, #005C97); 
+    transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+}
+
+.stats .active {
+    transform: translateY(0%);
+}
+
+.orignal, .predicted, .indicator {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EFEFBB;  
+    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB); 
+
+    margin: 0.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.indicator {
+    background: #0f0;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
